@@ -1,0 +1,28 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <!-- <th scope="col">Index</th>-->
+      <th scope="col">Name</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Age</th>
+      <th scope="col">EyeColor</th>
+      <th scope="col">Balance</th>
+      <th scope="col">Tags</th>
+      <th scope="col">Greeting</th>
+      <th scope="col">Favorite Fruit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of list">
+      <!-- <th scope="row">1</th> -->
+      <td>{{item.name}}</td>
+      <td>{{item.gender}}</td>
+      <td>{{item.age}}</td>
+      <td>{{item.eyeColor}}</td>
+      <td>{{item.balance}}</td>
+      <td>{{item.tags[0]}}</td>
+      <td>{{item.greeting}}</td>
+      <td>{{item.favoriteFruit}}</td>
+    </tr>
+  </tbody>
+</table>

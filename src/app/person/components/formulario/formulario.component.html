@@ -1,0 +1,43 @@
+<form novalidate [formGroup]="personForm" (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label class="form-label">Name:</label>
+    <input type="text" class="form-control" formControlName="name">
+  </div>
+
+  <div class="mb-3">
+    <label  class="form-label">Gender:</label>
+    <input type="text" class="form-control" formControlName="gender" >
+  </div>
+
+  <div class="mb-3">
+    <label  class="form-label">Age:</label>
+    <input type="number" class="form-control" formControlName="age">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">EyeColor:</label>
+    <input type="text" class="form-control" formControlName="eyeColor">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Balance:</label>
+    <input type="number" class="form-control" formControlName="balance">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Tags:</label>
+    <input type="text" class="form-control" formControlName="tags">
+  </div>
+
+  <div class="mb-3">
+    <label  class="form-label">Greeting:</label>
+    <input type="text" class="form-control" formControlName="greeting">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Favorite Fruit:</label>
+    <input type="text" class="form-control" formControlName="favoriteFruit">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
